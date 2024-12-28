@@ -1,0 +1,69 @@
+{
+	"igcse": [
+		{
+			"title": "Physics",
+			"description": "Past year papers, textbooks, and resources for Physics",
+			"destination": "./physics"
+		},
+		{
+			"title": "Chemistry",
+			"description": "Past year papers, textbooks, and resources for Chemistry",
+			"destination": "./chemistry"
+		},
+		{
+			"title": "Biology",
+			"description": "Past year papers, textbooks, and resources for Biology",
+			"destination": "./biology"
+		},
+		{
+			"title": "Human Biology",
+			"description": "Past year papers, textbooks, and resources for Human Biology",
+			"destination": "./human-biology"
+		},
+		{
+			"title": "Computer Science",
+			"description": "Past year papers, textbooks, and resources for Computer Science",
+			"destination": "./computer-science"
+		},
+		{
+			"title": "Information & Communication Technology",
+			"description": "Past year papers, textbooks, and resources for Information & Communication Technology",
+			"destination": "./ict"
+		},
+		{
+			"title": "Mathematics A",
+			"description": "Past year papers, textbooks, and resources for Mathematics A",
+			"destination": "./mathematics-a"
+		},
+		{
+			"title": "Mathematics B",
+			"description": "Past year papers, textbooks, and resources for Mathematics B",
+			"destination": "./mathematics-b"
+		},
+		{
+			"title": "Further Pure Mathematics",
+			"description": "Past year papers, textbooks, and resources for Further Pure Mathematics",
+			"destination": "./fpm"
+		},
+		{
+			"title": "English as a Second Language",
+			"description": "Past year papers, textbooks, and resources for English as a Second Language",
+			"destination": "./esl"
+		},
+		{
+			"title": "English Language A",
+			"description": "Past year papers, textbooks, and resources for English Language A",
+			"destination": "./ela"
+		},
+		{
+			"title": "English Language B",
+			"description": "Past year papers, textbooks, and resources for English Language B",
+			"destination": "./elb"
+		},
+		{
+			"title": "Business Studies",
+			"description": "Past year papers, textbooks, and resources for Business Studies",
+			"destination": "./business"
+		}
+	]
+}

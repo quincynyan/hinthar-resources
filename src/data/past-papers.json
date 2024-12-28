@@ -1,0 +1,114 @@
+{
+	"igcse": [
+		{
+			"subject": "Physics",
+			"papers": [
+				{
+					"year": "2019",
+					"papers": [
+						{
+							"title": "May/June Paper 1",
+							"description": "4PH1/1P 20190522",
+							"link": "https://example.com"
+						},
+						{
+							"title": "May/June Paper 2",
+							"description": "4PH1/2P 20190614",
+							"link": "https://example.com"
+						},
+						{
+							"title": "May/June Paper 1R",
+							"description": "4PH1/1PR 20190522",
+							"link": "https://example.com"
+						},
+						{
+							"title": "May/June Paper 2R",
+							"description": "4PH1/2PR 20190614",
+							"link": "https://example.com"
+						}
+					]
+				},
+				{
+					"year": "2020",
+					"papers": [
+						{
+							"title": "May/June Paper 1",
+							"description": "4PH1/1P 20200522",
+							"link": "https://example.com"
+						},
+						{
+							"title": "May/June Paper 2",
+							"description": "4PH1/2P 20200614",
+							"link": "https://example.com"
+						},
+						{
+							"title": "May/June Paper 1R",
+							"description": "4PH1/1PR 20200522",
+							"link": "https://example.com"
+						},
+						{
+							"title": "May/June Paper 2R",
+							"description": "4PH1/2PR 20200614",
+							"link": "https://example.com"
+						}
+					]
+				}
+			]
+		},
+		{
+			"subject": "Chemistry",
+			"papers": [
+				{
+					"year": "2019",
+					"papers": [
+						{
+							"title": "May/June Paper 1",
+							"description": "4CH1/1P 20190522",
+							"link": "https://example.com"
+						},
+						{
+							"title": "May/June Paper 2",
+							"description": "4CH1/2P 20190614",
+							"link": "https://example.com"
+						},
+						{
+							"title": "May/June Paper 1R",
+							"description": "4CH1/1PR 20190522",
+							"link": "https://example.com"
+						},
+						{
+							"title": "May/June Paper 2R",
+							"description": "4CH1/2PR 20190614",
+							"link": "https://example.com"
+						}
+					]
+				},
+				{
+					"year": "2020",
+					"papers": [
+						{
+							"title": "May/June Paper 1",
+							"description": "4CH1/1P 20200522",
+							"link": "https://example.com"
+						},
+						{
+							"title": "May/June Paper 2",
+							"description": "4CH1/2P 20200614",
+							"link": "https://example.com"
+						},
+						{
+							"title": "May/June Paper 1R",
+							"description": "4CH1/1PR 20200522",
+							"link": "https://example.com"
+						},
+						{
+							"title": "May/June Paper 2R",
+							"description": "4CH1/2PR 20200614",
+							"link": "https://example.com"
+						}
+					]
+				}
+			]
+		}
+	]
+}

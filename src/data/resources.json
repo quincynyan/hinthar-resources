@@ -1,0 +1,24 @@
+{
+	"resources": [
+		{
+			"title": "Past Papers",
+			"description": "Past year papers for all subjects",
+			"destination": "./past-papers"
+		},
+		{
+			"title": "Textbooks",
+			"description": "Student books and answer keys",
+			"destination": "./textbooks"
+		},
+		{
+			"title": "Resources",
+			"description": "Useful resources for students, such as formula sheets, notes, etc.",
+			"destination": "./resources"
+		},
+		{
+			"title": "Teaching Resources",
+			"description": "Resources for teachers, such as lesson plans, worksheets, etc.",
+			"destination": "./teaching-resources"
+		}
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"classes": [
+		{
+			"title": "IGCSE",
+			"description": "Pearson Edexcel O Levels",
+			"destination": "/igcse"
+		},
+		{
+			"title": "IAL",
+			"description": "Edexcel International Advanced Levels",
+			"destination": "/ial"
+		},
+		{
+			"title": "Pre-IG",
+			"description": "Year 7, 8, 9",
+			"destination": "/pre-ig"
+		},
+		{
+			"title": "Other Classes",
+			"description": "SAT, BCS, CCST, German",
+			"destination": "/other-classes"
+		}
+	]
+}
