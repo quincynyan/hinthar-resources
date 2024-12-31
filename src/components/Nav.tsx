@@ -1,4 +1,5 @@
 import { useLocation, useNavigate } from "@solidjs/router";
+import { classes } from "/src/data/classes.json";
 
 export default function Nav() {
 	const location = useLocation();
@@ -11,18 +12,75 @@ export default function Nav() {
 	};
 
 	const active = (path: string) =>
-		path == location.pathname
-			? "border-sky-600"
-			: "border-transparent hover:border-sky-600";
+		path == location.pathname ? "border-sky-600" : "border-transparent";
 	return (
 		<nav class="bg-sky-800">
 			<ul class="container flex items-center p-3 text-gray-200">
-				<li class={`border-b-2 ${active("/")} mx-1.5 sm:mx-6`}>
+				<li
+					class={`border-b-2 ${active("/")} hover:border-sky-200 mx-1.5 sm:mx-6`}
+				>
 					<a href="/">Home</a>
 				</li>
-				<li class={`border-b-2 ${active("/about")} mx-1.5 sm:mx-6`}>
+				<li
+					class={`border-b-2 ${active("/about")} hover:border-sky-200 mx-1.5 sm:mx-6`}
+				>
 					<a href="/about">About</a>
 				</li>
+
+				<div class="relative md:hidden ml-auto">
+					<button
+						class="p-2 bg-gray-200 rounded-lg hover:bg-gray-300 transition duration-200"
+						onClick={() => {
+							const menu = document.getElementById("mobile-menu");
+							if (menu) {
+								menu.classList.toggle("hidden");
+							}
+						}}
+					>
+						<svg
+							class="w-6 h-6"
+							fill="none"
+							stroke="gray"
+							viewBox="0 0 24 24"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M4 6h16M4 12h16m-7 6h7"
+							></path>
+						</svg>
+					</button>
+					<ul
+						id="mobile-menu"
+						class="absolute left-0 top-full mt-2 bg-gray-200 text-gray-900 hidden w-32 rounded-lg shadow-lg"
+						style={{ left: "-96px" }}
+					>
+						{classes.map((cls) => (
+							<li class="py-2 px-4">
+								<a
+									href={cls.destination}
+									class="no-underline hover:underline"
+								>
+									{cls.title}
+								</a>
+							</li>
+						))}
+					</ul>
+				</div>
+				<div class="hidden md:flex">
+					{classes.map((cls) => (
+						<li class="py-2 px-4">
+							<a
+								href={cls.destination}
+								class="no-underline hover:underline"
+							>
+								{cls.title}
+							</a>
+						</li>
+					))}
+				</div>
 
 				<li class="text-sm flex items-center space-x-1 ml-auto hidden md:flex">
 					<button
