@@ -1,8 +1,7 @@
-import { Component } from "solid-js";
 import { useLocation } from "@solidjs/router";
-import pastPapers from "../../../data/past-papers.json";
+import pastPapers from "/src/data/past-papers.json";
 
-const PastPapersPapers: Component = () => {
+export default function Subject() {
 	const location = useLocation();
 	const subject = location.pathname.split("/").slice(-2)[0];
 	const year = location.pathname.split("/").slice(-1)[0];
@@ -31,7 +30,7 @@ const PastPapersPapers: Component = () => {
 						class="block p-4 border border-gray-200 rounded-lg shadow hover:shadow-lg transition-shadow duration-200"
 					>
 						<div class="square">
-							<div class="square-title font-semibold text-xl mb-2">
+							<div class="square-title font-semibold text-xl mb-2 text-black">
 								{paper.title}
 							</div>
 							<div class="square-description text-gray-700">
@@ -43,6 +42,4 @@ const PastPapersPapers: Component = () => {
 			</div>
 		</div>
 	);
-};
-
-export default PastPapersPapers;
+}

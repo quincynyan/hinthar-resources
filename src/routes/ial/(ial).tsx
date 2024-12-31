@@ -1,15 +1,15 @@
-import { Component } from "solid-js";
-import resources from "../../data/resources.json";
+import resources from "/src/data/resources.json";
 
-const IGCSE: Component = () => {
+export default function Ial() {
 	return (
 		<div class="container mx-auto p-6">
-			<h1 class="text-3xl font-bold mb-4">IGCSE Page</h1>
+			<h1 class="text-3xl font-bold mb-4">IAL Page</h1>
 			<p class="text-lg text-gray-600">
-				Welcome to the IGCSE resources page.
+				Welcome to the IAL resources page.
 			</p>
 			<p class="text-sm text-gray-600">
-				Here, you will find resources for Pearson Edexcel O Levels.
+				Here, you will find resources for Edexcel International Advanced
+				Levels.
 			</p>
 			<br />
 			<hr />
@@ -17,11 +17,11 @@ const IGCSE: Component = () => {
 			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 				{resources.resources.map((resource) => (
 					<a
-						href={"/igcse/" + resource.destination}
+						href={"/ial/" + resource.destination}
 						class="block p-4 border border-gray-200 rounded-lg shadow hover:shadow-lg transition-shadow duration-200"
 					>
 						<div class="square">
-							<div class="square-title font-semibold text-xl mb-2">
+							<div class="square-title font-semibold text-xl mb-2 text-black">
 								{resource.title}
 							</div>
 							<div class="square-description text-gray-700">
@@ -33,6 +33,4 @@ const IGCSE: Component = () => {
 			</div>
 		</div>
 	);
-};
-
-export default IGCSE;
+}
