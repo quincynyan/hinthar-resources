@@ -1,3 +1,4 @@
+import { A } from "@solidjs/router";
 import resources from "/src/data/resources.json";
 
 export default function Igcse() {
@@ -15,7 +16,7 @@ export default function Igcse() {
 			<br />
 			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 				{resources.resources.map((resource) => (
-					<a
+					<A
 						href={"/igcse/" + resource.destination}
 						class="block p-4 border border-gray-200 rounded-lg shadow hover:shadow-lg transition-shadow duration-200"
 					>
@@ -27,7 +28,7 @@ export default function Igcse() {
 								<p class="p-2 m-2">{resource.description}</p>
 							</div>
 						</div>
-					</a>
+					</A>
 				))}
 			</div>
 		</div>

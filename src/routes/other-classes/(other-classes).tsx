@@ -1,4 +1,4 @@
-import resources from "/src/data/resources.json";
+import { A } from "@solidjs/router";
 
 export default function OtherClasses() {
 	return (
@@ -18,7 +18,7 @@ export default function OtherClasses() {
 					{ name: "CCST", description: "CCST certification classes" },
 					{ name: "German", description: "German language classes" }
 				].map((cls) => (
-					<a
+					<A
 						href={
 							"/other-classes/" +
 							cls.name.toLowerCase().replace(" ", "-") +
@@ -34,7 +34,7 @@ export default function OtherClasses() {
 								{cls.description}
 							</div>
 						</div>
-					</a>
+					</A>
 				))}
 			</div>
 		</div>

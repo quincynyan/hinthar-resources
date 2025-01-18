@@ -1,4 +1,4 @@
-import { useLocation } from "@solidjs/router";
+import { useLocation, A } from "@solidjs/router";
 import pastPapers from "/src/data/past-papers.json";
 
 export default function Subject() {
@@ -25,7 +25,7 @@ export default function Subject() {
 			<br />
 			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 				{subjectPapers?.papers.map((year) => (
-					<a
+					<A
 						href={`/igcse/past-papers/${subject}/${year.year}`}
 						class="block p-4 border border-gray-200 rounded-lg shadow hover:shadow-lg transition-shadow duration-200"
 					>
@@ -37,7 +37,7 @@ export default function Subject() {
 								<p class="p-2 m-2">{year.year}</p>
 							</div>
 						</div>
-					</a>
+					</A>
 				))}
 			</div>
 		</div>

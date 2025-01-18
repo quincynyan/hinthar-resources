@@ -8,13 +8,13 @@ export default function NotFound() {
 			</h1>
 			<p class="mt-8">
 				Visit{" "}
-				<a
+				<A
 					href="https://solidjs.com"
 					target="_blank"
 					class="text-sky-600 hover:underline"
 				>
 					solidjs.com
-				</a>{" "}
+				</A>{" "}
 				to learn how to build Solid apps.
 			</p>
 			<p class="my-4">

@@ -1,3 +1,4 @@
+import { A } from "@solidjs/router";
 import classes from "/src/data/classes.json";
 
 export default function GetStarted() {
@@ -16,7 +17,7 @@ export default function GetStarted() {
 			<br />
 			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 				{classes.classes.map((cls) => (
-					<a
+					<A
 						href={cls.destination}
 						class="block p-4 border border-gray-200 rounded-lg shadow hover:shadow-lg transition-shadow duration-200"
 					>
@@ -28,7 +29,7 @@ export default function GetStarted() {
 								<p class="p-2 m-2">{cls.description}</p>
 							</div>
 						</div>
-					</a>
+					</A>
 				))}
 			</div>
 		</div>

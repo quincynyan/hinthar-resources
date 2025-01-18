@@ -1,4 +1,4 @@
-import { useLocation, useNavigate } from "@solidjs/router";
+import { useLocation, useNavigate, A } from "@solidjs/router";
 import { classes } from "/src/data/classes.json";
 
 export default function Nav() {
@@ -19,12 +19,12 @@ export default function Nav() {
 				<li
 					class={`border-b-2 ${active("/")} hover:border-sky-200 mx-1.5 sm:mx-6`}
 				>
-					<a href="/">Home</a>
+					<A href="/">Home</A>
 				</li>
 				<li
 					class={`border-b-2 ${active("/about")} hover:border-sky-200 mx-1.5 sm:mx-6`}
 				>
-					<a href="/about">About</a>
+					<A href="/about">About</A>
 				</li>
 
 				<div class="relative md:hidden ml-auto">
@@ -59,12 +59,12 @@ export default function Nav() {
 					>
 						{classes.map((cls) => (
 							<li class="py-2 px-4">
-								<a
+								<A
 									href={cls.destination}
 									class="no-underline hover:underline"
 								>
 									{cls.title}
-								</a>
+								</A>
 							</li>
 						))}
 					</ul>
@@ -72,12 +72,12 @@ export default function Nav() {
 				<div class="hidden md:flex">
 					{classes.map((cls) => (
 						<li class="py-2 px-4">
-							<a
+							<A
 								href={cls.destination}
 								class="no-underline hover:underline"
 							>
 								{cls.title}
-							</a>
+							</A>
 						</li>
 					))}
 				</div>

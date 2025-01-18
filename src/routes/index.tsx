@@ -11,16 +11,16 @@ export default function Home() {
 			<br />
 			<div class="hero flex flex-col justify-center items-center">
 				<div class="flex space-x-4">
-					<a href="/get-started">
+					<A href="/get-started">
 						<button class="btn bg-blue-500 text-white font-semibold py-2 px-4 rounded-full shadow-md hover:bg-blue-600 transition duration-300">
 							Get started &rarr;
 						</button>
-					</a>
-					<a href="/about">
+					</A>
+					<A href="/about">
 						<button class="btn bg-gray-500 text-white font-semibold py-2 px-4 rounded-full shadow-md hover:bg-gray-600 transition duration-300">
 							Learn more &darr;
 						</button>
-					</a>
+					</A>
 				</div>
 			</div>
 
@@ -30,13 +30,13 @@ export default function Home() {
 			<br />
 			<p class="mt-8">
 				Visit{" "}
-				<a
+				<A
 					href="https://hinthar.education"
 					target="_blank"
 					class="text-sky-600 hover:underline"
 				>
 					hinthar.education
-				</a>{" "}
+				</A>{" "}
 				to learn more about Hinthar Education.
 			</p>
 			<p class="my-4">

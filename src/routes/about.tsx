@@ -15,13 +15,13 @@ export default function About() {
 			<br />
 			<p class="mt-8">
 				Visit{" "}
-				<a
+				<A
 					href="https://hinthar.education"
 					target="_blank"
 					class="text-sky-600 hover:underline"
 				>
 					hinthar.education
-				</a>{" "}
+				</A>{" "}
 				to learn more about Hinthar Education.
 			</p>
 			<p class="my-4">
